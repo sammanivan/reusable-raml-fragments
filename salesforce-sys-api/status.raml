@@ -1,0 +1,41 @@
+#%RAML 1.0
+title: Status API
+version: 1
+description: |
+  Contains all of the endpoints used by system administrators for introspection
+  and/or monitoring of the health of this interface.
+
+
+uses:
+  common-lib:  exchange_modules/02c33166-702d-433f-b25d-8a1b8d871bb2/reusable-raml-fragments/1.0.0/reusable-raml-fragments-library.raml
+/v1:
+  /contract:
+    get:
+      is: [common-lib.error-responses]
+      description: |
+        Provides the specification of the contract currently implemented by the API  
+      responses:
+        200:
+          body:
+            text/vnd.yaml:
+              type: string
+  /ping:
+    get:
+      is: [common-lib.error-responses]
+      description: Responds with _pong_ while the runtime is available
+      responses:
+        200:
+          body:
+            text/plain:
+              type: string
+              default: "pong"
+  /health:
+    get:
+      is: [common-lib.error-responses]
+      description: Responds with _OK_ while the runtime is available
+      responses:
+        200:
+          body:
+            text/plain:
+              type: string
+              default: "OK"
