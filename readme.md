@@ -7,7 +7,7 @@ This asset provides a basic set of RAML fragments such as datatypes, traits and 
 ## Usage Instructions
 
 1. Create a new RAML Fragment project in Design Centre named: "Common RAML Fragments"
-2. Add all the contents of this repository into a ZIP excluding the license and readme.md file.
+2. Add all the contents of reusable-raml-fragments folder of this repository into a ZIP excluding the license and readme.md file and salesforce-sys-api folder.
 3. Go to your Design Centre Project and choose "Import", then select the ZIP.
 4. Ensure you set the root RAML as the one which has been imported.
 5. Publish this asset to Exchange.
