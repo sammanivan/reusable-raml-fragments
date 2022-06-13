@@ -12,3 +12,4 @@ This asset provides a basic set of RAML fragments such as datatypes, traits and 
 4. Ensure you set the root RAML as the one which has been imported.
 5. Publish this asset to Exchange.
 7. This asset can now be imported into any new API Specification Design Centre project.
+8. The salesforce-sys-api RAML project included in the repository uses the RAML fragments and can used used as guiding example.
