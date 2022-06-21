@@ -4,7 +4,7 @@ usage: Common RAML Fragments to standardise implementation of common aspects of 
 #Ensure no existing traits or datatypes are updated with a breaking change if possible, they could be used by any number of services that could be affected. Ensure to use semantic versioning when publishing this fragment.
 
 traits:
-  common-headers: !include traits/common/common-headers-trait.raml
+  x-source-system: !include traits/common/x-source-system-trait.raml
   pageable: !include traits/common/pageable-trait.raml
   sortable: !include traits/common/sortable-trait.raml
   #There are 2 Rate Limited Traits here as they both specify a different success HTTP Code. Use as needed on the correct methods e.g. 200 for GET and 201 for POST.
